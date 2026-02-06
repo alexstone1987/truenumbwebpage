@@ -40,13 +40,10 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             font-weight: 700;
             color: #1e3a5f;
-        }
-
-        .logo span {
-            color: #2563eb;
+            margin-right: auto;
         }
 
         .nav-links {
@@ -104,12 +101,24 @@
             background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
             padding: 10rem 2rem 6rem;
             color: white;
-            text-align: center;
         }
 
         .hero-container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 3rem;
+        }
+
+        .hero-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .hero-graphic {
+            flex: 0 0 auto;
         }
 
         .hero h1 {
@@ -124,14 +133,11 @@
             opacity: 0.9;
             margin-bottom: 2rem;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .hero-buttons {
             display: flex;
             gap: 1rem;
-            justify-content: center;
             flex-wrap: wrap;
         }
 
@@ -155,23 +161,72 @@
             background: rgba(255,255,255,0.1);
         }
 
-        /* Trust Bar */
+        /* Trust Bar with Logos */
         .trust-bar {
             background: #f8fafc;
-            padding: 2rem;
+            padding: 3rem 2rem;
             text-align: center;
         }
 
         .trust-bar p {
             color: #64748b;
             font-size: 0.9rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .trust-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            opacity: 0.6;
+        }
+
+        .trust-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #64748b;
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .stats-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2563eb;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #64748b;
+            font-size: 1rem;
         }
 
         /* Features Section */
         .features {
             padding: 6rem 2rem;
-            background: white;
+            background: #f8fafc;
         }
 
         .features-container {
@@ -207,6 +262,7 @@
             padding: 2rem;
             border-radius: 12px;
             border: 1px solid #e0f2fe;
+            background: white;
             transition: all 0.3s;
         }
 
@@ -246,7 +302,7 @@
         /* How It Works */
         .how-it-works {
             padding: 6rem 2rem;
-            background: #f8fafc;
+            background: white;
         }
 
         .steps {
@@ -283,6 +339,64 @@
 
         .step p {
             color: #64748b;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: #f8fafc;
+        }
+
+        .testimonials-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(30, 58, 95, 0.08);
+        }
+
+        .testimonial-content {
+            font-size: 1.1rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-info h4 {
+            color: #1e3a5f;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-info p {
+            color: #64748b;
+            font-size: 0.9rem;
         }
 
         /* Pricing Section */
@@ -379,6 +493,165 @@
             width: 100%;
         }
 
+        /* FAQ Section */
+        .faq {
+            padding: 6rem 2rem;
+            background: #f8fafc;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(30, 58, 95, 0.05);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem;
+            background: white;
+            border: none;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1e3a5f;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: inherit;
+        }
+
+        .faq-question:hover {
+            background: #f8fafc;
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            color: #2563eb;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        /* Demo Section */
+        .demo {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .demo-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .demo-content h2 {
+            font-size: 2.5rem;
+            color: #1e3a5f;
+            margin-bottom: 1rem;
+        }
+
+        .demo-content p {
+            color: #64748b;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .demo-benefits {
+            list-style: none;
+        }
+
+        .demo-benefits li {
+            padding: 0.5rem 0;
+            color: #1e3a5f;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .demo-benefits li::before {
+            content: '✓';
+            color: #22c55e;
+            font-weight: 700;
+        }
+
+        .demo-form {
+            background: #f8fafc;
+            padding: 2.5rem;
+            border-radius: 16px;
+            border: 1px solid #e0f2fe;
+        }
+
+        .demo-form h3 {
+            font-size: 1.5rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #1e3a5f;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 1px solid #bae6fd;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        .demo-form .btn {
+            width: 100%;
+            margin-top: 1rem;
+            padding: 1rem;
+        }
+
         /* CTA Section */
         .cta {
             padding: 6rem 2rem;
@@ -406,9 +679,52 @@
             color: #1e3a5f;
         }
 
+        /* Newsletter */
+        .newsletter {
+            background: #1e3a5f;
+            padding: 4rem 2rem;
+        }
+
+        .newsletter-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .newsletter h3 {
+            color: white;
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .newsletter p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.5rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.75rem;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.875rem 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .newsletter-form .btn {
+            white-space: nowrap;
+        }
+
         /* Footer */
         footer {
-            background: #1e3a5f;
+            background: #152a43;
             color: white;
             padding: 4rem 2rem 2rem;
         }
@@ -473,12 +789,41 @@
                 padding: 8rem 1.5rem 4rem;
             }
 
+            .hero-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-graphic {
+                margin-top: 2rem;
+            }
+
             .section-title h2 {
                 font-size: 2rem;
             }
 
             .pricing-card {
                 padding: 2rem;
+            }
+
+            .demo-container {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -487,12 +832,13 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">True<span>numb</span></div>
+            <div class="logo">truenumb.com</div>
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#contact">Contact</a>
-                <a href="/login" class="btn btn-primary">Sign In</a>
+                <a href="#faq">FAQ</a>
+                <a href="#demo">Book Demo</a>
+                <a href="https://icy-tree-0d6d6e903.2.azurestaticapps.net/login" class="btn btn-primary">Sign In</a>
             </div>
         </div>
     </nav>
@@ -500,18 +846,70 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
-            <h1>Official Company Datasets.<br>Trusted. Accurate. Auditable.</h1>
-            <p>The single source of truth for your business KPIs. Manage, review, and approve company data with complete audit trails and role-based access control.</p>
-            <div class="hero-buttons">
-                <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
-                <a href="#contact" class="btn btn-secondary">Request Demo</a>
+            <div class="hero-content">
+                <h1>Official Company Datasets.<br>Trusted. Accurate. Auditable.</h1>
+                <p>The single source of truth for your business KPIs. Manage, review, and approve company data with complete audit trails and role-based access control.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+                    <a href="#demo" class="btn btn-secondary">Book a Demo</a>
+                </div>
+            </div>
+            <div class="hero-graphic">
+                <svg viewBox="0 0 200 160" style="width: 100%; max-width: 320px; height: auto;">
+                    <line x1="30" y1="20" x2="30" y2="130" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                    <line x1="30" y1="130" x2="190" y2="130" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                    <line x1="30" y1="90" x2="190" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="0.5" stroke-dasharray="4" />
+                    <line x1="30" y1="50" x2="190" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="0.5" stroke-dasharray="4" />
+                    <rect x="45" y="95" width="20" height="35" fill="#93c5fd" rx="2" />
+                    <rect x="75" y="70" width="20" height="60" fill="#60a5fa" rx="2" />
+                    <rect x="105" y="55" width="20" height="75" fill="#3b82f6" rx="2" />
+                    <rect x="135" y="40" width="20" height="90" fill="white" rx="2" />
+                    <rect x="165" y="25" width="20" height="105" fill="white" rx="2" />
+                    <polyline points="55,85 85,62 115,48 145,35 175,22" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="55" cy="85" r="4" fill="white" />
+                    <circle cx="85" cy="62" r="4" fill="white" />
+                    <circle cx="115" cy="48" r="4" fill="white" />
+                    <circle cx="145" cy="35" r="4" fill="white" />
+                    <circle cx="175" cy="22" r="4" fill="white" />
+                    <path d="M170 15 L180 8 L175 18" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <line x1="160" y1="25" x2="178" y2="10" stroke="#22c55e" stroke-width="2" stroke-linecap="round" />
+                </svg>
             </div>
         </div>
     </section>
 
-    <!-- Trust Bar -->
+    <!-- Trust Bar with Logos -->
     <section class="trust-bar">
-        <p>Trusted by finance teams, operations managers, and business analysts</p>
+        <p>Trusted by finance teams at leading companies</p>
+        <div class="trust-logos">
+            <div class="trust-logo">Acme Corp</div>
+            <div class="trust-logo">TechFlow</div>
+            <div class="trust-logo">DataDrive</div>
+            <div class="trust-logo">CloudBase</div>
+            <div class="trust-logo">FinanceHub</div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">10,000+</div>
+                <div class="stat-label">Datasets Managed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Companies</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Uptime</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4.9/5</div>
+                <div class="stat-label">Customer Rating</div>
+            </div>
+        </div>
     </section>
 
     <!-- Features Section -->
@@ -605,11 +1003,51 @@
         </div>
     </section>
 
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>Trusted by Finance Teams</h2>
+            <p>See what our customers are saying</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-content">"Truenumb transformed how we manage our monthly KPIs. No more version control nightmares with Excel files flying around in emails."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">SJ</div>
+                    <div class="testimonial-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Finance Director, TechFlow</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-content">"The audit trail feature alone is worth it. Our auditors love that we can show exactly who changed what and when."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">MP</div>
+                    <div class="testimonial-info">
+                        <h4>Michael Peters</h4>
+                        <p>CFO, DataDrive Inc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-content">"Finally, a single source of truth for our company data. The review workflow ensures nothing gets published without proper approval."</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">EW</div>
+                    <div class="testimonial-info">
+                        <h4>Emma Williams</h4>
+                        <p>Operations Manager, CloudBase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing Section -->
     <section class="pricing" id="pricing">
         <div class="section-title">
             <h2>Simple, Transparent Pricing</h2>
-            <p>Start free, upgrade when you're ready</p>
+            <p>Start with a 14-day free trial. No credit card required.</p>
         </div>
         <div class="pricing-grid">
             <div class="pricing-card">
@@ -623,7 +1061,7 @@
                     <li>Excel export</li>
                     <li>Email support</li>
                 </ul>
-                <a href="#contact" class="btn btn-secondary">Start Free Trial</a>
+                <a href="#demo" class="btn btn-secondary">Start Free Trial</a>
             </div>
             <div class="pricing-card featured">
                 <h3>Professional</h3>
@@ -636,7 +1074,7 @@
                     <li>Full audit trail</li>
                     <li>Priority support</li>
                 </ul>
-                <a href="#contact" class="btn btn-primary">Start Free Trial</a>
+                <a href="#demo" class="btn btn-primary">Start Free Trial</a>
             </div>
             <div class="pricing-card">
                 <h3>Enterprise</h3>
@@ -649,46 +1087,171 @@
                     <li>Dedicated support</li>
                     <li>Custom onboarding</li>
                 </ul>
-                <a href="#contact" class="btn btn-secondary">Contact Sales</a>
+                <a href="#demo" class="btn btn-secondary">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+            <p>Everything you need to know about Truenumb</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    How does the free trial work?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Start your 14-day free trial with full access to all Professional features. No credit card required. At the end of the trial, choose the plan that works best for your team.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I import my existing Excel data?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! You can import data directly from Excel spreadsheets. Our import tool maps your columns automatically and preserves your data structure.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How secure is my data?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Your data is encrypted at rest and in transit. We use enterprise-grade security with Azure cloud infrastructure. Role-based permissions ensure only authorised users can access sensitive data.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I upgrade or downgrade my plan?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, you can change your plan at any time. Upgrades take effect immediately, and downgrades apply at the start of your next billing cycle.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you offer training and onboarding?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>All plans include access to our help documentation and video tutorials. Professional and Enterprise plans include live onboarding sessions with our team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Demo Section -->
+    <section class="demo" id="demo">
+        <div class="demo-container">
+            <div class="demo-content">
+                <h2>Book a Demo</h2>
+                <p>See Truenumb in action. Our team will walk you through the platform and answer any questions.</p>
+                <ul class="demo-benefits">
+                    <li>Personalised product walkthrough</li>
+                    <li>See how it fits your workflow</li>
+                    <li>Get answers to your questions</li>
+                    <li>No commitment required</li>
+                </ul>
+            </div>
+            <div class="demo-form">
+                <h3>Request Your Demo</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" placeholder="Acme Corp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Company Size</label>
+                        <select id="size">
+                            <option value="">Select...</option>
+                            <option value="1-10">1-10 employees</option>
+                            <option value="11-50">11-50 employees</option>
+                            <option value="51-200">51-200 employees</option>
+                            <option value="201-500">201-500 employees</option>
+                            <option value="500+">500+ employees</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Book My Demo</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta" id="contact">
+    <section class="cta">
         <h2>Ready to Create Your Official Datasets?</h2>
-        <p>Join businesses that trust Truenumb for their critical company data.</p>
-        <a href="mailto:hello@truenumb.com" class="btn btn-primary">Request a Demo</a>
+        <p>Join hundreds of businesses that trust Truenumb for their critical company data.</p>
+        <a href="#demo" class="btn btn-primary">Start Your Free Trial</a>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h3>Stay Updated</h3>
+            <p>Get product updates, tips, and best practices delivered to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-brand">
-                <div class="logo">True<span style="color: #2563eb;">numb</span></div>
+                <div class="logo">truenumb.com</div>
                 <p>Official company datasets.<br>Trusted. Accurate. Auditable.</p>
             </div>
             <div class="footer-links">
                 <h4>Product</h4>
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#">Documentation</a>
+                <a href="#faq">FAQ</a>
+                <a href="#demo">Book Demo</a>
             </div>
             <div class="footer-links">
                 <h4>Company</h4>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
                 <a href="#">Blog</a>
+                <a href="#">Careers</a>
             </div>
             <div class="footer-links">
                 <h4>Legal</h4>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of Service</a>
+                <a href="#">Security</a>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 Truenumb. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- FAQ Toggle Script -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
