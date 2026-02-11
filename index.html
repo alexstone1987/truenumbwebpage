@@ -1061,7 +1061,7 @@
                     <li>Excel export</li>
                     <li>Email support</li>
                 </ul>
-                <a href="#demo" class="btn btn-secondary">Start Free Trial</a>
+                <a href="#" class="btn btn-secondary signup-link" data-plan="starter">Start Free Trial</a>
             </div>
             <div class="pricing-card featured">
                 <h3>Professional</h3>
@@ -1074,7 +1074,7 @@
                     <li>Full audit trail</li>
                     <li>Priority support</li>
                 </ul>
-                <a href="#demo" class="btn btn-primary">Start Free Trial</a>
+                <a href="#" class="btn btn-primary signup-link" data-plan="professional">Start Free Trial</a>
             </div>
             <div class="pricing-card">
                 <h3>Enterprise</h3>
@@ -1087,7 +1087,7 @@
                     <li>Dedicated support</li>
                     <li>Custom onboarding</li>
                 </ul>
-                <a href="#demo" class="btn btn-secondary">Contact Sales</a>
+                <a href="#" class="btn btn-secondary signup-link" data-plan="enterprise">Contact Sales</a>
             </div>
         </div>
     </section>
@@ -1196,7 +1196,7 @@
     <section class="cta">
         <h2>Ready to Create Your Official Datasets?</h2>
         <p>Join hundreds of businesses that trust Truenumb for their critical company data.</p>
-        <a href="#demo" class="btn btn-primary">Start Your Free Trial</a>
+        <a href="#pricing" class="btn btn-primary">Start Your Free Trial</a>
     </section>
 
     <!-- Newsletter -->
@@ -1246,6 +1246,18 @@
 
     <!-- FAQ Toggle Script -->
     <script>
+        // Environment-aware app URL
+        const appUrl = window.location.hostname === 'localhost'
+            ? 'http://localhost:5173'
+            : 'https://icy-tree-0d6d6e903.2.azurestaticapps.net';
+
+        // Set signup links dynamically
+        document.querySelectorAll('.signup-link').forEach(link => {
+            const plan = link.getAttribute('data-plan');
+            link.href = appUrl + '/signup?plan=' + plan;
+        });
+
+        // FAQ toggle
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
                 const item = button.parentElement;
