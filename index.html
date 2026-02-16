@@ -40,8 +40,8 @@
         }
 
         .logo {
-            font-size: 1.75rem;
-            font-weight: 700;
+            font-size: 2.75rem;
+            font-weight: 900;
             color: #1e3a5f;
             margin-right: auto;
         }
@@ -61,6 +61,47 @@
 
         .nav-links a:hover {
             color: #2563eb;
+        }
+
+        .nav-links a.btn-primary {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            transition: opacity 0.2s;
+        }
+
+        .social-links a:hover {
+            opacity: 0.7;
+        }
+
+        .social-links a svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .nav-links .social-links a svg {
+            fill: #1e3a5f;
+        }
+
+        .footer-social .social-links a svg {
+            fill: rgba(255,255,255,0.7);
+        }
+
+        .footer-social .social-links a:hover svg {
+            fill: white;
         }
 
         .btn {
@@ -161,7 +202,7 @@
             background: rgba(255,255,255,0.1);
         }
 
-        /* Trust Bar with Logos */
+        /* Trust Bar */
         .trust-bar {
             background: #f8fafc;
             padding: 3rem 2rem;
@@ -170,25 +211,10 @@
 
         .trust-bar p {
             color: #64748b;
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-        }
-
-        .trust-logos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-            opacity: 0.6;
-        }
-
-        .trust-logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #64748b;
         }
 
         /* Stats Section */
@@ -309,13 +335,13 @@
             max-width: 900px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
         }
 
         .step {
             text-align: center;
-            padding: 2rem;
+            padding: 1rem;
         }
 
         .step-number {
@@ -832,12 +858,17 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">truenumb.com</div>
+            <div class="logo">truenumb</div>
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#faq">FAQ</a>
                 <a href="#demo">Book Demo</a>
+                <div class="social-links">
+                    <a href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="#" target="_blank" title="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="#" target="_blank" title="X"><svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+                </div>
                 <a href="https://icy-tree-0d6d6e903.2.azurestaticapps.net/login" class="btn btn-primary">Sign In</a>
             </div>
         </div>
@@ -847,8 +878,8 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Official Company Datasets.<br>Trusted. Accurate. Auditable.</h1>
-                <p>The single source of truth for your business KPIs. Manage, review, and approve company data with complete audit trails and role-based access control.</p>
+                <h1>The single source of truth for your company KPI's and financials<br></h1>
+                <p>Official company datasets shared with investors, lenders and operational leaders. Manage, review and approve company data with complete audit trails and role-based access control</p>
                 <div class="hero-buttons">
                     <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
                     <a href="#demo" class="btn btn-secondary">Book a Demo</a>
@@ -880,26 +911,19 @@
 
     <!-- Trust Bar with Logos -->
     <section class="trust-bar">
-        <p>Trusted by finance teams at leading companies</p>
-        <div class="trust-logos">
-            <div class="trust-logo">Acme Corp</div>
-            <div class="trust-logo">TechFlow</div>
-            <div class="trust-logo">DataDrive</div>
-            <div class="trust-logo">CloudBase</div>
-            <div class="trust-logo">FinanceHub</div>
-        </div>
+        <p>Stop chasing spreadsheets. Create one official dataset that everyone trusts.</p>
     </section>
 
     <!-- Stats Section -->
     <section class="stats">
         <div class="stats-container">
             <div class="stat-item">
-                <div class="stat-number">10,000+</div>
+                <div class="stat-number">1,000+</div>
                 <div class="stat-label">Datasets Managed</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">500+</div>
-                <div class="stat-label">Companies</div>
+                <div class="stat-label">Users</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number">99.9%</div>
@@ -917,7 +941,6 @@
         <div class="features-container">
             <div class="section-title">
                 <h2>Everything You Need for Reliable Business Data</h2>
-                <p>Stop chasing spreadsheets. Create one official dataset that everyone trusts.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -1000,14 +1023,21 @@
                 <h3>Review & Lock</h3>
                 <p>Reviewers approve, owners lock completed periods</p>
             </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Share  datasets</h3>
+                <p>Share with colleagues, investors and banks</p>
+            </div>
+
+
         </div>
     </section>
 
     <!-- Testimonials -->
     <section class="testimonials">
         <div class="section-title">
-            <h2>Trusted by Finance Teams</h2>
-            <p>See what our customers are saying</p>
+            <h2>Trusted by operations, investors and banks</h2>
+            <p>See feedback from customers</p>
         </div>
         <div class="testimonials-grid">
             <div class="testimonial-card">
@@ -1047,12 +1077,12 @@
     <section class="pricing" id="pricing">
         <div class="section-title">
             <h2>Simple, Transparent Pricing</h2>
-            <p>Start with a 14-day free trial. No credit card required.</p>
+            <p>Start with a 14-day free trial. No credit card required. Cancel anytime</p>
         </div>
         <div class="pricing-grid">
             <div class="pricing-card">
                 <h3>Starter</h3>
-                <div class="price">$49<span>/month</span></div>
+                <div class="price">£20<span>/month</span></div>
                 <p class="description">For small teams getting started</p>
                 <ul class="pricing-features">
                     <li>Up to 5 users</li>
@@ -1065,10 +1095,10 @@
             </div>
             <div class="pricing-card featured">
                 <h3>Professional</h3>
-                <div class="price">$99<span>/month</span></div>
+                <div class="price">£50<span>/month</span></div>
                 <p class="description">For growing businesses</p>
                 <ul class="pricing-features">
-                    <li>Up to 20 users</li>
+                    <li>Unlimited users</li>
                     <li>Unlimited datasets</li>
                     <li>Document attachments</li>
                     <li>Full audit trail</li>
@@ -1215,8 +1245,15 @@
     <footer>
         <div class="footer-container">
             <div class="footer-brand">
-                <div class="logo">truenumb.com</div>
-                <p>Official company datasets.<br>Trusted. Accurate. Auditable.</p>
+                <div class="logo">truenumb</div>
+                <p>Official company datasets<br>The single source of truth</p>
+                <div class="footer-social" style="margin-top: 1rem;">
+                    <div class="social-links">
+                        <a href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="#" target="_blank" title="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="#" target="_blank" title="X"><svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+                    </div>
+                </div>
             </div>
             <div class="footer-links">
                 <h4>Product</h4>
