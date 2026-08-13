@@ -22,13 +22,12 @@
 
         /* Navigation */
         nav {
-            background: white;
-            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+            padding: 0.6rem 2rem;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(30, 58, 95, 0.1);
         }
 
         .nav-container {
@@ -40,10 +39,27 @@
         }
 
         .logo {
-            font-size: 2.75rem;
-            font-weight: 900;
-            color: #1e3a5f;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: white;
             margin-right: auto;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            display: flex;
+            align-items: flex-end;
+            gap: 2px;
+            position: relative;
+        }
+
+        .logo-icon svg {
+            width: 40px;
+            height: 40px;
         }
 
         .nav-links {
@@ -54,17 +70,26 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #1e3a5f;
+            color: rgba(255,255,255,0.85);
             font-weight: 500;
             transition: color 0.2s;
         }
 
         .nav-links a:hover {
-            color: #2563eb;
+            color: white;
         }
 
-        .nav-links a.btn-primary {
+        .nav-links a.btn-signin {
             color: white;
+            border: 1.5px solid rgba(255,255,255,0.5);
+            padding: 0.45rem 1.1rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .nav-links a.btn-signin:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: white;
         }
 
         .social-links {
@@ -93,7 +118,7 @@
         }
 
         .nav-links .social-links a svg {
-            fill: #1e3a5f;
+            fill: rgba(255,255,255,0.8);
         }
 
         .footer-social .social-links a svg {
@@ -140,46 +165,39 @@
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
-            padding: 10rem 2rem 6rem;
+            padding: 7rem 2rem 4rem;
             color: white;
+            text-align: center;
         }
 
         .hero-container {
-            max-width: 1100px;
+            max-width: 800px;
             margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 3rem;
         }
 
         .hero-content {
-            flex: 1;
-            text-align: left;
-        }
-
-        .hero-graphic {
-            flex: 0 0 auto;
+            text-align: center;
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.75rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.25rem;
             line-height: 1.2;
         }
 
         .hero p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             opacity: 0.9;
-            margin-bottom: 2rem;
-            max-width: 600px;
+            margin: 0 auto 2rem;
+            max-width: 640px;
         }
 
         .hero-buttons {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .hero .btn-primary {
@@ -519,6 +537,121 @@
             width: 100%;
         }
 
+        /* Video Section */
+        .nav-gap {
+            background: white;
+            margin-top: 62px;
+            padding: 3.5rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .nav-gap h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e3a5f;
+            margin: 0 0 1rem;
+            line-height: 1.2;
+        }
+
+        .nav-gap p {
+            color: #64748b;
+            font-size: 1.1rem;
+            margin: 0 auto 2rem;
+            max-width: 580px;
+        }
+
+        .nav-gap-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .video-section {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+            padding: 4rem 2rem 4.5rem;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-subtitle {
+            color: rgba(255,255,255,0.7);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+        }
+
+        .video-wrapper {
+            position: relative;
+            max-width: 960px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.55);
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            display: block;
+            transform: scale(1.003);
+        }
+
+        .sound-toggle {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            background: rgba(0,0,0,0.55);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-family: inherit;
+            backdrop-filter: blur(4px);
+            transition: background 0.2s;
+            z-index: 10;
+        }
+
+        .sound-toggle:hover {
+            background: rgba(0,0,0,0.8);
+        }
+
+        /* Slides Section */
+        .slides-section {
+            padding: 5rem 2rem;
+            background: #f8fafc;
+        }
+
+        .slides-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .slide-item {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(30, 58, 95, 0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .slide-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(30, 58, 95, 0.22);
+        }
+
+        .slide-item img {
+            width: 100%;
+            display: block;
+        }
+
         /* FAQ Section */
         .faq {
             padding: 6rem 2rem;
@@ -759,8 +892,8 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 3rem;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2rem;
         }
 
         .footer-brand .logo {
@@ -812,24 +945,7 @@
             }
 
             .hero {
-                padding: 8rem 1.5rem 4rem;
-            }
-
-            .hero-container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero-content {
-                text-align: center;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .hero-graphic {
-                margin-top: 2rem;
+                padding: 6rem 1.5rem 3rem;
             }
 
             .section-title h2 {
@@ -851,6 +967,10 @@
             .testimonials-grid {
                 grid-template-columns: 1fr;
             }
+
+            .slides-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -858,89 +978,60 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">truenumb</div>
+            <div class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2"  y="18" width="5" height="8"  fill="#93c5fd" rx="0.5"/>
+                        <rect x="9"  y="13" width="5" height="13" fill="#60a5fa" rx="0.5"/>
+                        <rect x="16" y="8"  width="5" height="18" fill="#3b82f6" rx="0.5"/>
+                        <rect x="23" y="3"  width="5" height="23" fill="white"   rx="0.5"/>
+                        <polyline points="4.5,16 11.5,11 18.5,6 25.5,2"
+                            fill="none" stroke="#22c55e" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                truenumb
+            </div>
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#faq">FAQ</a>
-                <a href="#demo">Book Demo</a>
+                <a href="#demo">Book demo</a>
                 <div class="social-links">
                     <a href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
                     <a href="https://www.facebook.com/profile.php?id=61591839513136" target="_blank" title="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
                     <a href="https://x.com/truenumbapp" target="_blank" title="X"><svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
                 </div>
-                <a href="https://app.truenumb.com/login" class="btn btn-primary">Sign In</a>
+                <a href="https://app.truenumb.com/login" class="btn-signin">Sign In</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>The single source of truth for your company KPI's and financials<br></h1>
-                <p>Official company datasets shared with investors, lenders and operational leaders. Manage, review and approve company data with complete audit trails and role-based access control</p>
-                <div class="hero-buttons">
-                    <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
-                    <a href="#demo" class="btn btn-secondary">Book a Demo</a>
-                </div>
-            </div>
-            <div class="hero-graphic">
-                <svg viewBox="0 0 200 160" style="width: 100%; max-width: 320px; height: auto;">
-                    <line x1="30" y1="20" x2="30" y2="130" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
-                    <line x1="30" y1="130" x2="190" y2="130" stroke="rgba(255,255,255,0.3)" stroke-width="1" />
-                    <line x1="30" y1="90" x2="190" y2="90" stroke="rgba(255,255,255,0.2)" stroke-width="0.5" stroke-dasharray="4" />
-                    <line x1="30" y1="50" x2="190" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="0.5" stroke-dasharray="4" />
-                    <rect x="45" y="95" width="20" height="35" fill="#93c5fd" rx="2" />
-                    <rect x="75" y="70" width="20" height="60" fill="#60a5fa" rx="2" />
-                    <rect x="105" y="55" width="20" height="75" fill="#3b82f6" rx="2" />
-                    <rect x="135" y="40" width="20" height="90" fill="white" rx="2" />
-                    <rect x="165" y="25" width="20" height="105" fill="white" rx="2" />
-                    <polyline points="55,85 85,62 115,48 145,35 175,22" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                    <circle cx="55" cy="85" r="4" fill="white" />
-                    <circle cx="85" cy="62" r="4" fill="white" />
-                    <circle cx="115" cy="48" r="4" fill="white" />
-                    <circle cx="145" cy="35" r="4" fill="white" />
-                    <circle cx="175" cy="22" r="4" fill="white" />
-                    <path d="M170 15 L180 8 L175 18" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <line x1="160" y1="25" x2="178" y2="10" stroke="#22c55e" stroke-width="2" stroke-linecap="round" />
-                </svg>
-            </div>
+    <div class="nav-gap">
+        <h2>The single source of truth for your business numbers</h2>
+        <p>Official company numbers shared with management, the board and investors. Manage, review and approve data with complete audit trails and role-based access control.</p>
+        <div class="nav-gap-buttons">
+            <a href="#pricing" class="btn btn-primary">Start free trial</a>
+            <a href="#demo" class="btn btn-secondary">Book a Demo</a>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <section class="video-section" id="video">
+        <div class="video-wrapper">
+            <video id="intro-video" autoplay muted playsinline loop>
+                <source src="truenumb-intro.mp4" type="video/mp4">
+            </video>
+            <button class="sound-toggle" id="sound-toggle" onclick="toggleSound()">&#128264; Unmute</button>
         </div>
     </section>
 
     <!-- Trust Bar with Logos -->
-    <section class="trust-bar">
-        <p>Stop chasing spreadsheets. Create one official dataset that everyone trusts.</p>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="stat-number">1,000+</div>
-                <div class="stat-label">Datasets Managed</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">Users</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">99.9%</div>
-                <div class="stat-label">Uptime</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">4.9/5</div>
-                <div class="stat-label">Customer Rating</div>
-            </div>
-        </div>
-    </section>
-
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="features-container">
             <div class="section-title">
-                <h2>Everything You Need for Reliable Business Data</h2>
+                <h2>Everything you need for strong data governance, robust control and to maintain the confidence of your board and investors</h2>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -949,7 +1040,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3>Review & Approval Workflows</h3>
+                    <h3>Review & approve workflows</h3>
                     <p>Data entry users submit, reviewers approve. Every cell has a clear status and audit trail.</p>
                 </div>
                 <div class="feature-card">
@@ -958,8 +1049,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                         </svg>
                     </div>
-                    <h3>Role-Based Permissions</h3>
-                    <p>Control who can view, edit, and approve each dataset. Lock columns when periods close.</p>
+                    <h3>Role-based permissions</h3>
+                    <p>Control who can view, edit, and approve each dataset. Lock periods once the dataset is approved.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -967,8 +1058,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                         </svg>
                     </div>
-                    <h3>Complete Audit Trail</h3>
-                    <p>Every change is logged with who, what, and when. Export full history for compliance.</p>
+                    <h3>Complete audit trail</h3>
+                    <p>Every change is logged with who, what and when. Export full history for compliance.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -976,7 +1067,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
                         </svg>
                     </div>
-                    <h3>Document Attachments</h3>
+                    <h3>Document attachments</h3>
                     <p>Link supporting documents to any data cell. Reference specific Excel cells for traceability.</p>
                 </div>
                 <div class="feature-card">
@@ -985,8 +1076,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                         </svg>
                     </div>
-                    <h3>Excel Import & Export</h3>
-                    <p>Import data from Excel. Export datasets for reporting and analysis anytime.</p>
+                    <h3>Import and export data</h3>
+                    <p>Import data from your other software using our API or link directly to your Excel workbooks.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -994,8 +1085,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                     </div>
-                    <h3>Multi-User Collaboration</h3>
-                    <p>Your whole team on one platform. See who's working on what in real time.</p>
+                    <h3>Multi-user collaboration</h3>
+                    <p>Your whole team on one platform. Share specific datasets with relevant team members, investors or lenders.</p>
                 </div>
             </div>
         </div>
@@ -1004,28 +1095,27 @@
     <!-- How It Works -->
     <section class="how-it-works">
         <div class="section-title">
-            <h2>How It Works</h2>
-            <p>Get your official datasets up and running in minutes</p>
+            <h2>Get your official datasets up and running in minutes</h2>
         </div>
         <div class="steps">
             <div class="step">
                 <div class="step-number">1</div>
-                <h3>Create Dataset</h3>
-                <p>Define your KPIs, dates, and who can access what</p>
+                <h3>Create dataset</h3>
+                <p>Define your data structures, dates and who can access what</p>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
-                <h3>Enter Data</h3>
+                <h3>Enter data</h3>
                 <p>Team members input data for their assigned fields</p>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
-                <h3>Review & Lock</h3>
-                <p>Reviewers approve, owners lock completed periods</p>
+                <h3>Review & lock</h3>
+                <p>Reviewers approve owners lock completed periods</p>
             </div>
             <div class="step">
                 <div class="step-number">4</div>
-                <h3>Share  datasets</h3>
+                <h3>Share datasets</h3>
                 <p>Share with colleagues, investors and banks</p>
             </div>
 
@@ -1033,51 +1123,11 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="section-title">
-            <h2>Trusted by operations, investors and banks</h2>
-            <p>See feedback from customers</p>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p class="testimonial-content">"Truenumb transformed how we manage our monthly KPIs. No more version control nightmares with Excel files flying around in emails."</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">SJ</div>
-                    <div class="testimonial-info">
-                        <h4>Sarah Johnson</h4>
-                        <p>Finance Director, TechFlow</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <p class="testimonial-content">"The audit trail feature alone is worth it. Our auditors love that we can show exactly who changed what and when."</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">MP</div>
-                    <div class="testimonial-info">
-                        <h4>Michael Peters</h4>
-                        <p>CFO, DataDrive Inc</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <p class="testimonial-content">"Finally, a single source of truth for our company data. The review workflow ensures nothing gets published without proper approval."</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">EW</div>
-                    <div class="testimonial-info">
-                        <h4>Emma Williams</h4>
-                        <p>Operations Manager, CloudBase</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Pricing Section -->
     <section class="pricing" id="pricing">
         <div class="section-title">
-            <h2>Simple, Transparent Pricing</h2>
-            <p>Start with a 14-day free trial. No credit card required. Cancel anytime</p>
+            <h2>Simple, transparent pricing</h2>
+            <p>Start with a 14-day free trial. Cancel anytime.</p>
         </div>
         <div class="pricing-grid">
             <div class="pricing-card">
@@ -1085,37 +1135,40 @@
                 <div class="price">£20<span>/month</span></div>
                 <p class="description">For small teams getting started</p>
                 <ul class="pricing-features">
-                    <li>Up to 5 users</li>
-                    <li>10 datasets</li>
+                    <li>Up to 5 users and 10 datasets</li>
                     <li>Review workflows</li>
-                    <li>Excel export</li>
+                    <li>Excel import and export</li>
+                    <li>Document attachments</li>
+                    <li>Full audit trail</li>
                     <li>Email support</li>
                 </ul>
-                <a href="#" class="btn btn-secondary signup-link" data-plan="starter">Start Free Trial</a>
+                <a href="#" class="btn btn-secondary signup-link" data-plan="starter">Start free trial</a>
             </div>
             <div class="pricing-card featured">
                 <h3>Professional</h3>
                 <div class="price">£50<span>/month</span></div>
                 <p class="description">For growing businesses</p>
                 <ul class="pricing-features">
-                    <li>Unlimited users</li>
-                    <li>Unlimited datasets</li>
+                    <li><strong>Unlimited users and datasets</strong></li>
+                    <li>Review workflows</li>
+                    <li>Excel import and export</li>
                     <li>Document attachments</li>
                     <li>Full audit trail</li>
-                    <li>Priority support</li>
+                    <li><strong>Priority support</strong></li>
                 </ul>
-                <a href="#" class="btn btn-primary signup-link" data-plan="professional">Start Free Trial</a>
+                <a href="#" class="btn btn-primary signup-link" data-plan="professional">Start free trial</a>
             </div>
             <div class="pricing-card">
                 <h3>Enterprise</h3>
                 <div class="price">Custom</div>
                 <p class="description">For large organisations</p>
                 <ul class="pricing-features">
-                    <li>Unlimited users</li>
-                    <li>Unlimited datasets</li>
-                    <li>SSO integration</li>
-                    <li>Dedicated support</li>
-                    <li>Custom onboarding</li>
+                    <li>Unlimited users and datasets</li>
+                    <li>Review workflows</li>
+                    <li><strong>API and Excel integration</strong></li>
+                    <li>Document attachments</li>
+                    <li>Full audit trail</li>
+                    <li><strong>Dedicated support</strong></li>
                 </ul>
                 <a href="#" class="btn btn-secondary signup-link" data-plan="enterprise">Contact Sales</a>
             </div>
@@ -1126,7 +1179,6 @@
     <section class="faq" id="faq">
         <div class="section-title">
             <h2>Frequently Asked Questions</h2>
-            <p>Everything you need to know about Truenumb</p>
         </div>
         <div class="faq-container">
             <div class="faq-item">
@@ -1135,7 +1187,7 @@
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>Start your 14-day free trial with full access to all Professional features. No credit card required. At the end of the trial, choose the plan that works best for your team.</p>
+                    <p>Start your 14-day free trial with full access to all Professional features. At the end of the trial, choose the plan that works best for your team.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -1177,7 +1229,7 @@
         </div>
     </section>
 
-    <!-- Book Demo Section -->
+    <!-- Book demo Section -->
     <section class="demo" id="demo">
         <div class="demo-container">
             <div class="demo-content">
@@ -1216,7 +1268,7 @@
                             <option value="500+">500+ employees</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Book My Demo</button>
+                    <button type="submit" class="btn btn-primary">Book my demo</button>
                 </form>
             </div>
         </div>
@@ -1224,28 +1276,29 @@
 
     <!-- CTA Section -->
     <section class="cta">
-        <h2>Ready to Create Your Official Datasets?</h2>
-        <p>Join hundreds of businesses that trust Truenumb for their critical company data.</p>
-        <a href="#pricing" class="btn btn-primary">Start Your Free Trial</a>
+        <h2>Ready to create your official datasets?</h2>
+        <a href="#pricing" class="btn btn-primary">Start free trial</a>
     </section>
 
     <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="newsletter-container">
-            <h3>Stay Updated</h3>
-            <p>Get product updates, tips, and best practices delivered to your inbox.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-brand">
-                <div class="logo">truenumb</div>
+                <div class="logo">
+                    <span class="logo-icon">
+                        <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2"  y="18" width="5" height="8"  fill="#93c5fd" rx="0.5"/>
+                            <rect x="9"  y="13" width="5" height="13" fill="#60a5fa" rx="0.5"/>
+                            <rect x="16" y="8"  width="5" height="18" fill="#3b82f6" rx="0.5"/>
+                            <rect x="23" y="3"  width="5" height="23" fill="white"   rx="0.5"/>
+                            <polyline points="4.5,16 11.5,11 18.5,6 25.5,2"
+                                fill="none" stroke="#22c55e" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    truenumb
+                </div>
                 <div class="footer-social" style="margin-top: 1rem;">
                     <div class="social-links">
                         <a href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
@@ -1253,20 +1306,18 @@
                         <a href="#" target="_blank" title="X"><svg viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
                     </div>
                 </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: rgba(255,255,255,0.7);">Contact: <a href="mailto:hello@truenumb.com" style="color: rgba(255,255,255,0.7);">hello@truenumb.com</a></p>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <a href="about.html">About</a>
             </div>
             <div class="footer-links">
                 <h4>Product</h4>
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#faq">FAQ</a>
-                <a href="#demo">Book Demo</a>
-            </div>
-            <div class="footer-links">
-                <h4>Company</h4>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
+                <a href="#demo">Book demo</a>
             </div>
             <div class="footer-links">
                 <h4>Legal</h4>
@@ -1277,12 +1328,20 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Truenumb. All rights reserved.</p>
+            <p>&copy; 2026 truenumb. All rights reserved.<br>Truenumb is a trading name of Fern Consulting Limited. Company number: 13903834. Registered address: 128 City Road, London, United Kingdom, EC1V 2NX.</p>
         </div>
     </footer>
 
     <!-- FAQ Toggle Script -->
     <script>
+        // Sound toggle for intro video
+        function toggleSound() {
+            const video = document.getElementById('intro-video');
+            const btn = document.getElementById('sound-toggle');
+            video.muted = !video.muted;
+            btn.textContent = video.muted ? '\uD83D\uDD07 Unmute' : '\uD83D\uDD0A Mute';
+        }
+
         // Environment-aware app URL
         const appUrl = window.location.hostname === 'localhost'
             ? 'http://localhost:5173'
