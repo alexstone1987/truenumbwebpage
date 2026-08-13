@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security | truenumb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #1e3a5f; line-height: 1.7; background: #f8fafc; }
+        nav { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); padding: 0.6rem 2rem; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; font-size: 2.5rem; font-weight: 700; letter-spacing: -1px; color: white; text-decoration: none; }
+        .logo svg { width: 40px; height: 40px; }
+        .policy-wrap { max-width: 800px; margin: 4rem auto; background: white; padding: 3rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(30,58,95,0.08); }
+        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .intro { color: #64748b; font-size: 1.05rem; margin-bottom: 2rem; }
+        h2 { font-size: 1.2rem; margin: 2rem 0 0.75rem; }
+        p, li { color: #374151; margin-bottom: 0.75rem; }
+        ul { padding-left: 1.5rem; margin-bottom: 0.75rem; }
+        a { color: #2563eb; }
+        .security-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
+        .security-card { background: #f0f9ff; border: 1px solid #e0f2fe; border-radius: 10px; padding: 1.5rem; }
+        .security-card h3 { color: #1e3a5f; font-size: 1rem; margin-bottom: 0.5rem; }
+        .security-card p { color: #374151; font-size: 0.9rem; margin: 0; }
+        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.85rem; }
+        @media (max-width: 600px) { .security-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index-v2.html" class="logo">
+                <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2"  y="18" width="5" height="8"  fill="#93c5fd" rx="0.5"/>
+                    <rect x="9"  y="13" width="5" height="13" fill="#60a5fa" rx="0.5"/>
+                    <rect x="16" y="8"  width="5" height="18" fill="#3b82f6" rx="0.5"/>
+                    <rect x="23" y="3"  width="5" height="23" fill="white"   rx="0.5"/>
+                    <polyline points="4.5,16 11.5,11 18.5,6 25.5,2" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                truenumb
+            </a>
+        </div>
+    </nav>
+
+    <div class="policy-wrap">
+        <h1>Security</h1>
+        <p class="intro">Security is fundamental to everything we build at truenumb. Our customers trust us with their most sensitive business data, and we take that responsibility seriously.</p>
+
+        <div class="security-grid">
+            <div class="security-card">
+                <h3>Encryption in transit</h3>
+                <p>All data transmitted between your browser and our servers is encrypted using TLS (HTTPS). We do not support unencrypted connections.</p>
+            </div>
+            <div class="security-card">
+                <h3>Encryption at rest</h3>
+                <p>All data stored on our servers is encrypted at rest using industry-standard AES-256 encryption via Microsoft Azure.</p>
+            </div>
+            <div class="security-card">
+                <h3>Cloud infrastructure</h3>
+                <p>truenumb runs on Microsoft Azure, one of the world's most trusted cloud platforms, with enterprise-grade physical and network security.</p>
+            </div>
+            <div class="security-card">
+                <h3>Authentication</h3>
+                <p>We use JSON Web Tokens (JWT) for session authentication. Passwords are stored as bcrypt hashes — we never store plain text passwords.</p>
+            </div>
+            <div class="security-card">
+                <h3>Role-based access control</h3>
+                <p>Every dataset has granular permission settings. Users only see and access the data they are explicitly authorised to view or edit.</p>
+            </div>
+            <div class="security-card">
+                <h3>Audit trail</h3>
+                <p>Every data entry, review, approval and lock action is logged with a timestamp and the user who performed it. Nothing can be changed without a record.</p>
+            </div>
+            <div class="security-card">
+                <h3>Payment security</h3>
+                <p>Card payments are handled entirely by Stripe, which is PCI DSS Level 1 certified. We never store or process card details on our servers.</p>
+            </div>
+            <div class="security-card">
+                <h3>Data isolation</h3>
+                <p>Each company's data is logically isolated. Users can only access data belonging to their own company or companies they have been explicitly invited to.</p>
+            </div>
+        </div>
+
+        <h2>Reporting a vulnerability</h2>
+        <p>If you discover a security vulnerability in the truenumb platform, please report it responsibly to us at <a href="mailto:hello@truenumb.com">hello@truenumb.com</a>. We will investigate all reports promptly and work to address verified issues as quickly as possible.</p>
+
+        <h2>Questions</h2>
+        <p>If you have any questions about our security practices, please contact us at <a href="mailto:hello@truenumb.com">hello@truenumb.com</a>.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 truenumb. Truenumb is a trading name of Fern Consulting Limited. Company number: 13903834.</p>
+    </footer>
+</body>
+</html>

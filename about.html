@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | truenumb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #1e3a5f; line-height: 1.7; background: #f8fafc; }
+        nav { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); padding: 0.6rem 2rem; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; font-size: 2.5rem; font-weight: 700; letter-spacing: -1px; color: white; text-decoration: none; }
+        .logo svg { width: 40px; height: 40px; }
+        .policy-wrap { max-width: 800px; margin: 4rem auto; background: white; padding: 3rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(30,58,95,0.08); }
+        h1 { font-size: 2rem; margin-bottom: 2rem; }
+        h2 { font-size: 1.2rem; margin: 2rem 0 0.75rem; }
+        p, li { color: #374151; margin-bottom: 0.75rem; }
+        ul { padding-left: 1.5rem; margin-bottom: 0.75rem; }
+        a { color: #2563eb; }
+        .company-details { background: #f0f9ff; border: 1px solid #e0f2fe; border-radius: 10px; padding: 1.5rem; margin-top: 2rem; }
+        .company-details h2 { margin-top: 0; }
+        .detail-row { display: flex; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid #e0f2fe; font-size: 0.95rem; }
+        .detail-row:last-child { border-bottom: none; }
+        .detail-label { color: #64748b; min-width: 160px; font-weight: 500; }
+        .detail-value { color: #1e3a5f; }
+        footer { text-align: center; padding: 2rem; font-size: 0.85rem; background: #152a43; color: rgba(255,255,255,0.5); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index-v2.html" class="logo">
+                <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2"  y="18" width="5" height="8"  fill="#93c5fd" rx="0.5"/>
+                    <rect x="9"  y="13" width="5" height="13" fill="#60a5fa" rx="0.5"/>
+                    <rect x="16" y="8"  width="5" height="18" fill="#3b82f6" rx="0.5"/>
+                    <rect x="23" y="3"  width="5" height="23" fill="white"   rx="0.5"/>
+                    <polyline points="4.5,16 11.5,11 18.5,6 25.5,2" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                truenumb
+            </a>
+        </div>
+    </nav>
+
+    <div class="policy-wrap">
+        <h1>About truenumb</h1>
+
+        <h2>Why we built truenumb</h2>
+        <p>Every business runs on numbers — revenue, costs, headcount, KPIs. But for most companies, those numbers live in dozens of different spreadsheets, inboxes and systems, with different versions circulating to different people. By the time a number reaches the board or an investor, nobody is quite sure which version is correct or who signed it off.</p>
+        <p>truenumb was built to solve that problem. We wanted to give businesses a single, structured place to enter, review, approve and share their official data — with a complete audit trail and clear ownership at every step.</p>
+        <p>The result is a platform where management, boards, investors and lenders can all refer to the same trusted set of numbers, knowing exactly who put them there and who approved them.</p>
+
+        <h2>What we do</h2>
+        <p>truenumb is a cloud-based data management platform for businesses that take their reporting seriously. Teams use truenumb to:</p>
+        <ul>
+            <li>Create structured datasets for KPIs, financials and operational metrics</li>
+            <li>Assign data entry and review responsibilities to the right people</li>
+            <li>Review and approve numbers before they are shared externally</li>
+            <li>Lock reporting periods once data is finalised</li>
+            <li>Share clean, approved datasets with investors, lenders and the board</li>
+            <li>Maintain a complete audit trail of every change</li>
+        </ul>
+        <p>Data can be imported from Excel workbooks or connected directly from other systems using our API. Everything is available for export at any time.</p>
+
+        <h2>Who we work with</h2>
+        <p>truenumb is used by finance directors, CFOs, operations managers and their teams who are responsible for producing reliable business data. Our customers typically share datasets with their boards, investors and lenders, and need confidence that the numbers they share are accurate, approved and traceable.</p>
+
+        <div class="company-details">
+            <h2>Company details</h2>
+            <div class="detail-row">
+                <span class="detail-label">Trading name</span>
+                <span class="detail-value">truenumb</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Legal name</span>
+                <span class="detail-value">Fern Consulting Limited</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Company number</span>
+                <span class="detail-value">13903834</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Registered address</span>
+                <span class="detail-value">128 City Road, London, United Kingdom, EC1V 2NX</span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Contact</span>
+                <span class="detail-value"><a href="mailto:hello@truenumb.com">hello@truenumb.com</a></span>
+            </div>
+            <div class="detail-row">
+                <span class="detail-label">Website</span>
+                <span class="detail-value"><a href="index-v2.html">truenumb.co.uk</a></span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 truenumb. Truenumb is a trading name of Fern Consulting Limited. Company number: 13903834.</p>
+    </footer>
+</body>
+</html>
