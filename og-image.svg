@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Logo icon (bar chart) -->
+  <g transform="translate(100, 185)">
+    <rect x="0"   y="110" width="38" height="58"  fill="#93c5fd" rx="3"/>
+    <rect x="52"  y="78"  width="38" height="90"  fill="#60a5fa" rx="3"/>
+    <rect x="104" y="46"  width="38" height="122" fill="#3b82f6" rx="3"/>
+    <rect x="156" y="14"  width="38" height="154" fill="white"   rx="3"/>
+    <polyline points="19,100 71,68 123,36 175,10" fill="none" stroke="#22c55e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Logo text -->
+  <text x="310" y="265" font-family="'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="700" fill="white" letter-spacing="-3">truenumb</text>
+
+  <!-- Divider -->
+  <rect x="100" y="310" width="80" height="5" fill="#22c55e" rx="3"/>
+
+  <!-- Tagline -->
+  <text x="100" y="385" font-family="'Helvetica Neue', Arial, sans-serif" font-size="38" font-weight="400" fill="rgba(255,255,255,0.85)">The single source of truth for your business numbers</text>
+
+  <!-- Sub-line -->
+  <text x="100" y="450" font-family="'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="400" fill="rgba(255,255,255,0.55)">Business data management · KPI reporting · Audit trails · Board-ready datasets</text>
+
+  <!-- URL badge -->
+  <rect x="100" y="510" width="230" height="50" rx="8" fill="rgba(255,255,255,0.12)"/>
+  <text x="215" y="542" font-family="'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="500" fill="rgba(255,255,255,0.75)" text-anchor="middle">www.truenumb.com</text>
+</svg>

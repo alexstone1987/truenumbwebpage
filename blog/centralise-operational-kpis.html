@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JKP612XSF3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JKP612XSF3');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Ops Directors Centralise KPIs Without a Data Warehouse | Truenumb</title>
+    <meta name="description" content="You don't need a data warehouse to centralise operational KPIs. Learn how operations directors get control of their metrics without a six-figure infrastructure project.">
+    <link rel="canonical" href="https://www.truenumb.com/blog/centralise-operational-kpis.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How Ops Directors Centralise KPIs Without a Data Warehouse | Truenumb">
+    <meta property="og:description" content="You don't need a data warehouse to centralise operational KPIs. Learn how operations directors get control of their metrics without a six-figure infrastructure project.">
+    <meta property="og:url" content="https://www.truenumb.com/blog/centralise-operational-kpis.html">
+    <meta property="og:image" content="https://www.truenumb.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.truenumb.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.truenumb.com/blog/" },
+            { "@type": "ListItem", "position": 3, "name": "How Ops Directors Centralise KPIs Without a Data Warehouse", "item": "https://www.truenumb.com/blog/centralise-operational-kpis.html" }
+          ]
+        },
+        {
+          "@type": "Article",
+          "headline": "How Ops Directors Centralise KPIs Without a Data Warehouse",
+          "author": { "@type": "Organization", "name": "Truenumb" },
+          "publisher": { "@type": "Organization", "name": "Truenumb", "url": "https://www.truenumb.com/" },
+          "datePublished": "2026-08-28",
+          "url": "https://www.truenumb.com/blog/centralise-operational-kpis.html"
+        }
+      ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #1e3a5f; line-height: 1.7; background: #f8fafc; }
+        nav { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); padding: 0.6rem 2rem; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; font-size: 2.5rem; font-weight: 700; letter-spacing: -1px; color: white; text-decoration: none; }
+        .logo svg { width: 40px; height: 40px; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { text-decoration: none; color: rgba(255,255,255,0.85); font-weight: 500; }
+        .nav-links a:hover { color: white; }
+        .nav-links a.btn-signin { border: 1.5px solid rgba(255,255,255,0.5); padding: 0.45rem 1.1rem; border-radius: 6px; color: white; }
+        .article-wrap { max-width: 740px; margin: 3rem auto; background: white; padding: 3rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(30,58,95,0.08); }
+        .breadcrumb { font-size: 0.85rem; color: #94a3b8; margin-bottom: 1.5rem; }
+        .breadcrumb a { color: #2563eb; text-decoration: none; }
+        .tag { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #2563eb; margin-bottom: 0.75rem; }
+        h1 { font-size: 2rem; font-weight: 700; line-height: 1.25; margin-bottom: 0.5rem; }
+        .meta { color: #94a3b8; font-size: 0.85rem; margin-bottom: 2rem; }
+        h2 { font-size: 1.2rem; font-weight: 600; margin: 2rem 0 0.75rem; }
+        p { color: #374151; margin-bottom: 1rem; }
+        ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+        li { color: #374151; margin-bottom: 0.4rem; }
+        .cta-box { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); border-radius: 10px; padding: 2rem; text-align: center; margin-top: 2.5rem; }
+        .cta-box p { color: rgba(255,255,255,0.85); margin-bottom: 1rem; }
+        .cta-box a { display: inline-block; background: white; color: #1e3a5f; font-weight: 600; padding: 0.7rem 1.75rem; border-radius: 6px; text-decoration: none; }
+        .cta-box a:hover { opacity: 0.9; }
+        footer { text-align: center; padding: 2rem; font-size: 0.85rem; background: #152a43; color: rgba(255,255,255,0.5); margin-top: 4rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2"  y="18" width="5" height="8"  fill="#93c5fd" rx="0.5"/>
+                    <rect x="9"  y="13" width="5" height="13" fill="#60a5fa" rx="0.5"/>
+                    <rect x="16" y="8"  width="5" height="18" fill="#3b82f6" rx="0.5"/>
+                    <rect x="23" y="3"  width="5" height="23" fill="white"   rx="0.5"/>
+                    <polyline points="4.5,16 11.5,11 18.5,6 25.5,2" fill="none" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                truenumb
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#features">Features</a>
+                <a href="../index.html#pricing">Pricing</a>
+                <a href="index.html">Blog</a>
+                <a href="https://app.truenumb.com/login" class="btn-signin">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="article-wrap">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &rsaquo; <a href="index.html">Blog</a> &rsaquo; Centralise operational KPIs
+        </div>
+        <div class="tag">Operations</div>
+        <h1>How Ops Directors Centralise KPIs Without a Data Warehouse</h1>
+        <div class="meta">Published 28 August 2026 &middot; By Truenumb</div>
+
+        <p>Every Operations Director knows the problem. You manage a business that runs on data — delivery times, utilisation rates, headcount, throughput, customer satisfaction scores — but that data lives in six different places: the ERP, the scheduling tool, a couple of spreadsheets owned by different team leads, and a dashboard that nobody has updated since Q3 last year.</p>
+
+        <p>The standard advice from consultants is to build a data warehouse. Connect all your systems, run ETL pipelines, stand up a BI tool, and suddenly everything is centralised. The reality: this project takes 6&ndash;18 months, costs more than the business case justified, and by the time it's live, three of the source systems have changed.</p>
+
+        <p>There is a better way for most growing businesses — and it doesn't involve a data engineering team.</p>
+
+        <h2>Why operational KPIs are harder to centralise than financial ones</h2>
+        <p>Financial data is relatively well-structured: it lives in accounting systems with standard formats, and finance teams have decades of practice managing it. Operational KPIs are messier. They're often defined differently across teams, collected at different cadences, and owned by people who are not data specialists. A delivery completion rate means one thing to the logistics team and something slightly different to the customer success team.</p>
+        <p>This definitional inconsistency is the first problem to solve. Before you can centralise operational KPIs, you need to agree on what each metric means, who owns it, and how often it should be updated.</p>
+
+        <h2>The lightweight alternative to a data warehouse</h2>
+        <p>For businesses that don't have the scale or budget for full data infrastructure, the centralisation problem can be solved with a structured data collection system rather than a data integration system. Instead of connecting to source systems (which requires engineering), you define the KPIs you need, assign ownership, and collect the data through a controlled entry process.</p>
+        <p>This is essentially what a well-run finance team already does for financial KPIs — defined fields, structured entry, review, approval. The insight is that the same approach works for operational metrics.</p>
+        <p>The result is a single, approved record of operational performance that can be shared with finance for management accounts, with the board for strategy reviews, and with investors for portfolio reporting — without anyone needing to run a SQL query or understand a data pipeline.</p>
+
+        <h2>What this looks like in practice</h2>
+        <p>A typical implementation for an Ops Director might look like this:</p>
+        <ul>
+            <li>Define 10&ndash;20 operational KPIs that matter most for the business review cycle</li>
+            <li>Assign a data owner for each — the person closest to the source who can verify accuracy</li>
+            <li>Set a monthly (or weekly) submission cadence</li>
+            <li>Route each submission through a review step before it becomes "official"</li>
+            <li>Export clean, approved datasets into the management reporting format</li>
+        </ul>
+        <p>This process can be running within days, not months, and it creates something valuable that a data warehouse often doesn't: a clear chain of accountability for each number.</p>
+
+        <h2>When to upgrade to a data warehouse</h2>
+        <p>A centralised data entry approach isn't the right answer forever. When you need real-time operational data, when you're running predictive models across large datasets, or when you have the engineering capacity to maintain integrations, a proper data infrastructure investment makes sense. But for most businesses with 20&ndash;500 employees that need clean, approved operational KPIs on a weekly or monthly cadence, the lightweight approach delivers 90% of the value at 5% of the cost and complexity.</p>
+
+        <div class="cta-box">
+            <p>Centralise your operational KPIs today — no data warehouse needed.</p>
+            <a href="https://www.truenumb.com/#pricing">Start your free trial</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Truenumb &mdash; Fern Consulting Limited &mdash; <a href="../privacy.html" style="color:rgba(255,255,255,0.5)">Privacy</a>
+    </footer>
+</body>
+</html>
